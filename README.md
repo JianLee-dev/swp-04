@@ -1,2 +1,2 @@
 # 2016XXXX	Hyein Lee
-# Kookmin Univ. Sw
+# Kookmin Univ. computer sciense
