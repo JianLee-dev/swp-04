@@ -10,10 +10,13 @@ def application(environ, start_response):
     Sum = 0
     Product = 0
     
-    if '' not in [x, y]:
+    if x.isdigit() and y.isdigit():
         x, y = int(x), int(y)
         Sum = x+y
         Product = x*y
+    else:
+	Sum = -1
+	Product = -1
         
     response_body = html%{
         'Sum' : Sum,
