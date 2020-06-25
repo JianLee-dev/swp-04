@@ -10,11 +10,11 @@ def application(environ, start_response):
     Sum = 0
     Product = 0
     
-    if x.isdigit() and y.isdigit():
+    try:
         x, y = int(x), int(y)
         Sum = x+y
         Product = x*y
-    else:
+    except ValueError:
 	Sum = -1
 	Product = -1
         
